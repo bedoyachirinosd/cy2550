@@ -1,15 +1,47 @@
 from bs4 import BeautifulSoup
 import requests
 import urllib.request , sys
-URL = "https://gaming.stackexchange.com/questions?tab=Newest"
-page = requests.get(URL)
+URL = "https://gaming.stackexchange.com/questions?tab=newest&page="
+#page = requests.get(URL)
 
-soup = BeautifulSoup(page.content, "html.parser")
+#soup = BeautifulSoup(page.content, "html.parser")
 
-results = str(soup.find_all("h3"))
-#results = str(soup.find(class="ss-post-summary--content"))
-with open('project1/htmlFile.txt', 'w') as f:
-      f.write(results)
+#results = str(soup.find_all("h3")
+ 
+string = ""
+
+counter=0
+
+title=[]
+
+myDiv2 = []
+
+
+
+for i in range(2):
+    i+=1
+    next_page = URL + str(i)
+    page = requests.get(next_page)
+    soup = BeautifulSoup(page.content, "html.parser")
+    mydivs = soup.find_all(class_="s-post-summary--content-title")
+    myDiv2.append(mydivs[i])
+    string = string, soup
+
+for name in mydivs:
+    for child in name.children: 
+       title.append(child)
+'''
+
+'''
+with open('GroupProject/Datas/project1/header.txt', 'w') as f:
+    str1 = ''
+    for i in range(len(title)):
+        str1 = str1 + str(title[i])
+    f.write(str1)
+
+    #results = str(soup.find(class_="ss-post-summary--content"))
+with open('GroupProject/Datas/project1/htmlFile.txt', 'w') as f:
+      f.write(str(string))
 
 
       

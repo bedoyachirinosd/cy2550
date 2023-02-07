@@ -1,103 +1,46 @@
 from bs4 import BeautifulSoup
 import requests
-import urllib.request , sys
 URL = "https://gaming.stackexchange.com/questions?tab=newest&page="
-#page = requests.get(URL)
-
-#soup = BeautifulSoup(page.content, "html.parser")
-
-#results = str(soup.find_all("h3")
- 
+URLAfter = 'https://gaming.stackexchange.com/'
 string = ""
-
-counter=0
-
 title=[]
-
 myDiv2 = []
 
+#Gets first 50 questions of the first 20 pages from stackoverflow
 
-
-for i in range(2):
-    i+=1
-    next_page = URL + str(i)
-    page = requests.get(next_page)
+for i in range(1):#change from 1 to 20 to get 1000 questions         
+    i+=1  
+    
+#Creates string of Url with appended page number
+    next_page = URL + str(i)       
+#Get page with created url from stackoverflow
+    page = requests.get(next_page)  
+#converts request to html page
     soup = BeautifulSoup(page.content, "html.parser")
+#Locates title of question for each entry in page
     mydivs = soup.find_all(class_="s-post-summary--content-title")
-    myDiv2.append(mydivs[i])
+    myDiv2.append(mydivs)
     string = string, soup
 
-for name in mydivs:
-    for child in name.children: 
-       title.append(child)
-'''
+index = 0
+#Loops through my div object to get title of and load the page of each question
+for div in myDiv2:
+    for name in div:
+        for child in name.children: 
+#Checks if title is a newline character
+            if(child != '\n'):
+                index += 1
+                # find excate title and comes of with link name
+                link= URLAfter + child['href']
+                title.append(link)
+                fileLink = str('profile_files/profile' + str(index) +'.txt')
+                print(fileLink)
+                #gets page of the question and stores it in profile_files folder
+                page = requests.get(link)
+                soup = BeautifulSoup(page.content, "html.parser")
+                with open(('profile_files/profile' + str(index) +'.txt'), 'a') as f:
+                    f.write(str(soup))
+                             
 
-'''
-with open('GroupProject/Datas/project1/header.txt', 'w') as f:
-    str1 = ''
-    for i in range(len(title)):
-        str1 = str1 + str(title[i])
-    f.write(str1)
-
-    #results = str(soup.find(class_="ss-post-summary--content"))
-with open('GroupProject/Datas/project1/htmlFile.txt', 'w') as f:
+with open('project1/htmlFile.txt', 'w') as f:
       f.write(str(string))
-
-
-      
-'''s-post-summary--content
-try:
-    #raw = page.read()
-        #html = raw.decode()
-
-except:
-    print("Didnt work")
-    sys.exit(1)
-'''
-#page = requests.get(URL)
-
-#soup = BeautifulSoup(page.content, "html.parser")
-#results = str(soup.find(id="questions"))
-
-
-#with open('project1/htmlFile.txt', 'w') as f:
- #      f.write(html)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-<div class="s-post-summary--meta-tags tags js-tags t-no-mans-sky">
-
-<ul class="ml0 list-ls-none js-post-tag-list-wrapper d-inline"><li class="d-inline mr4 js-post-tag-list-item"><a href="/questions/tagged/no-mans-sky" class="post-tag flex--item mt0 js-tagname-no-mans-sky" title="show questions tagged 'no-mans-sky'" aria-label="show questions tagged 'no-mans-sky'" rel="tag" aria-labelledby="no-mans-sky-container">no-mans-sky</a></li></ul>
-            </div>
-#print(page.text)
-
-'''
-
-'''
-html_doc = """
-<html><head><title>The Dormouse's story</title></head>
-<body>
-<p class="title"><b>The Dormouse's story</b></p>
-
-<p class="story">Once upon a time there were three little sisters; and their names were
-<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
-<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
-<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
-and they lived at the bottom of a well.</p>
-
-<p class="story">...</p>
-"""
-soup = BeautifulSoup(html_doc, 'html.parser')
-print(soup.prettify())'''

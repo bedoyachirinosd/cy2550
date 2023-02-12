@@ -8,6 +8,7 @@ fullText = ''
 profile = []
 profileName = []
 
+account= []
 
 title=[]
 TitleArray = []
@@ -34,9 +35,9 @@ for i in range(1):#change from 1 to 20 to get 1000 questions
 
     count = 0
 
+    accountOne = soup.find_all(class_= "question-page unified-theme")
+
     profile = soup.findAll(True, {'class':['s-avatar s-avatar__16 s-user-card--avatar', 's-avatar s-avatar__16 s-user-card--avatar js-user-hover-target']})
-    for tag in profile:
-        profileName.append(tag['href'])
 
     for tag in soup.find_all(class_="s-post-summary js-post-summary") :
         ids.append(tag["id"])
@@ -48,7 +49,7 @@ index = 0
 
 
 title_str = ""
-
+edited_list = []
 
 for div in TitleArray:
     for name in div:
@@ -60,19 +61,45 @@ for div in TitleArray:
                 # find excate title and comes of with link name
             
                 title_str = title_str + child.getText() + "\n id: " + ids[index-1]+ '\n' 
-                '''
+                
                 link= URLAfter + child['href']
                 title.append(link)
                 fileLink = str('profile_files/profile' + str(index) +'.txt')
-                print(fileLink)
                 #gets page of the question and stores it in profile_files folder
                 page = requests.get(link)
+                print(link)
                 soup = BeautifulSoup(page.content, "html.parser")
+                for link in soup.find_all(class_="js-gps-track"):
+                    print(link.get('href'))
+                '''
+                lp = soup.find_all.title
+
+                isEdited = False
+                edited_list.append(1)
+                #print(lp)
+
+                
+                if(len(edited_list)>1):
+                    isEdited == True
+            
+
+                '''
+
                 with open(('profile_files/profile' + str(index) +'.txt'), 'a') as f:
                     f.write(str(soup))
-                    '''
+                    account.append(soup)
+
+                
+print(len(edited_list))
+print("\n")
+
+
+'''
                     
-                    
+
+
+for i in range(1):
+       
         
 with open('project1/title.txt', 'w') as f:
     f.write(title_str)
@@ -90,6 +117,9 @@ with open('project1/profileInfo.txt', 'w') as f:
     f.write(profileStr)
 
 
+with open('GroupProject/Datas/profile_files/profile1.txt', 'r') as outputfile:
+    soup = BeautifulSoup(outputfile.content, "html.parser")
+    print(soup)
 
 
 
@@ -98,8 +128,6 @@ with open('project1/profileInfo.txt', 'w') as f:
 
 
 
-
-'''
 id
 CHECK 1.The title (str) and the ID (str) of the question.
 

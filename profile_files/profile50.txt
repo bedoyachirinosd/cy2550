@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Too Many Requests - Stack Exchange</title>
+<style type="text/css">
+		body
+		{
+			color: #333;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-size: 14px;
+			background: #fff url('img/bg-noise.png') repeat left top;
+			line-height: 1.4;
+		}
+		h1
+		{
+			font-size: 170%;
+			line-height: 34px;
+			font-weight: normal;
+		}
+		a { color: #366fb3; }
+		a:visited { color: #12457c; }
+		.wrapper {
+			width:960px;
+			margin: 100px auto;
+			text-align:left;
+		}
+		.msg {
+			float: left;
+			width: 700px;
+			padding-top: 18px;
+			margin-left: 18px;
+		}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<div style="float: left;">
+<img alt="Stack Exchange" src="https://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png"/>
+</div>
+<div class="msg">
+<h1>Too many requests</h1>
+<p>This IP address (76.119.140.138) has performed an unusually high number of requests and has been temporarily rate limited. If you believe this to be in error, please contact us at <a href="mailto:team@stackexchange.com?Subject=Rate%20limiting%20of%2076.119.140.138%20(Request%20ID%3A%20403504039-BOS)">team@stackexchange.com</a>.</p>
+<p>When contacting us, please include the following information in the email:</p>
+<p>Method: rate limit</p>
+<p>XID: 403504039-BOS</p>
+<p>IP: 76.119.140.138</p>
+<p>X-Forwarded-For: 76.119.140.138</p>
+<p>User-Agent: python-requests/2.28.2</p>
+<p>Reason: Request rate exceeded.</p>
+<p>Time: Tue, 07 Feb 2023 23:04:48 GMT</p>
+<p>URL: gaming.stackexchange.com//questions/401433/is-there-a-way-to-add-a-black-outline-to-text-in-kingdom-come-deliverance</p>
+<p>Browser Location: <span id="jslocation">(not loaded)</span></p>
+</div>
+</div>
+<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
+</body>
+</html><!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Too Many Requests - Stack Exchange</title>
+<style type="text/css">
+		body
+		{
+			color: #333;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-size: 14px;
+			background: #fff url('img/bg-noise.png') repeat left top;
+			line-height: 1.4;
+		}
+		h1
+		{
+			font-size: 170%;
+			line-height: 34px;
+			font-weight: normal;
+		}
+		a { color: #366fb3; }
+		a:visited { color: #12457c; }
+		.wrapper {
+			width:960px;
+			margin: 100px auto;
+			text-align:left;
+		}
+		.msg {
+			float: left;
+			width: 700px;
+			padding-top: 18px;
+			margin-left: 18px;
+		}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<div style="float: left;">
+<img alt="Stack Exchange" src="https://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png"/>
+</div>
+<div class="msg">
+<h1>Too many requests</h1>
+<p>This IP address (198.145.76.231) has performed an unusually high number of requests and has been temporarily rate limited. If you believe this to be in error, please contact us at <a href="mailto:team@stackexchange.com?Subject=Rate%20limiting%20of%20198.145.76.231%20(Request%20ID%3A%203371127824-MIA)">team@stackexchange.com</a>.</p>
+<p>When contacting us, please include the following information in the email:</p>
+<p>Method: rate limit</p>
+<p>XID: 3371127824-MIA</p>
+<p>IP: 198.145.76.231</p>
+<p>X-Forwarded-For: 198.145.76.231</p>
+<p>User-Agent: python-requests/2.28.2</p>
+<p>Reason: Request rate exceeded.</p>
+<p>Time: Sun, 12 Feb 2023 19:10:57 GMT</p>
+<p>URL: gaming.stackexchange.com//questions/401491/fix-end-spawn-in-playerdata</p>
+<p>Browser Location: <span id="jslocation">(not loaded)</span></p>
+</div>
+</div>
+<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
+</body>
+</html><!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Too Many Requests - Stack Exchange</title>
+<style type="text/css">
+		body
+		{
+			color: #333;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-size: 14px;
+			background: #fff url('img/bg-noise.png') repeat left top;
+			line-height: 1.4;
+		}
+		h1
+		{
+			font-size: 170%;
+			line-height: 34px;
+			font-weight: normal;
+		}
+		a { color: #366fb3; }
+		a:visited { color: #12457c; }
+		.wrapper {
+			width:960px;
+			margin: 100px auto;
+			text-align:left;
+		}
+		.msg {
+			float: left;
+			width: 700px;
+			padding-top: 18px;
+			margin-left: 18px;
+		}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<div style="float: left;">
+<img alt="Stack Exchange" src="https://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png"/>
+</div>
+<div class="msg">
+<h1>Too many requests</h1>
+<p>This IP address (69.174.103.35) has performed an unusually high number of requests and has been temporarily rate limited. If you believe this to be in error, please contact us at <a href="mailto:team@stackexchange.com?Subject=Rate%20limiting%20of%2069.174.103.35%20(Request%20ID%3A%202792357277-FTY)">team@stackexchange.com</a>.</p>
+<p>When contacting us, please include the following information in the email:</p>
+<p>Method: rate limit</p>
+<p>XID: 2792357277-FTY</p>
+<p>IP: 69.174.103.35</p>
+<p>X-Forwarded-For: 69.174.103.35</p>
+<p>User-Agent: python-requests/2.28.2</p>
+<p>Reason: Request rate exceeded.</p>
+<p>Time: Sun, 12 Feb 2023 19:18:15 GMT</p>
+<p>URL: gaming.stackexchange.com//questions/401492/where-can-i-get-a-bank-item-to-access-my-bank-account-on-the-go</p>
+<p>Browser Location: <span id="jslocation">(not loaded)</span></p>
+</div>
+</div>
+<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
+</body>
+</html><!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Too Many Requests - Stack Exchange</title>
+<style type="text/css">
+		body
+		{
+			color: #333;
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			font-size: 14px;
+			background: #fff url('img/bg-noise.png') repeat left top;
+			line-height: 1.4;
+		}
+		h1
+		{
+			font-size: 170%;
+			line-height: 34px;
+			font-weight: normal;
+		}
+		a { color: #366fb3; }
+		a:visited { color: #12457c; }
+		.wrapper {
+			width:960px;
+			margin: 100px auto;
+			text-align:left;
+		}
+		.msg {
+			float: left;
+			width: 700px;
+			padding-top: 18px;
+			margin-left: 18px;
+		}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+<div style="float: left;">
+<img alt="Stack Exchange" src="https://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png"/>
+</div>
+<div class="msg">
+<h1>Too many requests</h1>
+<p>This IP address (86.38.186.13) has performed an unusually high number of requests and has been temporarily rate limited. If you believe this to be in error, please contact us at <a href="mailto:team@stackexchange.com?Subject=Rate%20limiting%20of%2086.38.186.13%20(Request%20ID%3A%203384622652-CHI)">team@stackexchange.com</a>.</p>
+<p>When contacting us, please include the following information in the email:</p>
+<p>Method: rate limit</p>
+<p>XID: 3384622652-CHI</p>
+<p>IP: 86.38.186.13</p>
+<p>X-Forwarded-For: 86.38.186.13</p>
+<p>User-Agent: python-requests/2.28.2</p>
+<p>Reason: Request rate exceeded.</p>
+<p>Time: Sun, 12 Feb 2023 19:23:42 GMT</p>
+<p>URL: gaming.stackexchange.com//questions/401492/where-can-i-get-a-bank-item-to-access-my-bank-account-on-the-go</p>
+<p>Browser Location: <span id="jslocation">(not loaded)</span></p>
+</div>
+</div>
+<script>document.getElementById('jslocation').innerHTML = window.location.href;</script>
+</body>
+</html>

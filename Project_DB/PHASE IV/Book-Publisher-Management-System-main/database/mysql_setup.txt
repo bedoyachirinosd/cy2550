@@ -1,0 +1,7 @@
+sudo apt-get update
+sudo apt-get install -y default-mysql-client 
+sudo apt-get clean
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306 mysql:latest
+docker ps
+mysql -u root -p -h 127.0.0.1 -P 3306
+source /workspace/Book-Publisher-Management-System/database/setup.sql;
